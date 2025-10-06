@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-s3-enable-data-services.html 
 keywords: s3 buckets, s3 storage, s3 working environment, s3 system, amazon s3 buckets, amazon s3 working environment, amazon s3 system, 
-summary: Une fois que vous avez découvert les compartiments S3 dans la console NetApp , vous pouvez utiliser les services de données NetApp pour la sauvegarde, la hiérarchisation, la classification et la synchronisation des données. 
+summary: Après avoir découvert les compartiments S3 dans la NetApp Console, vous pouvez utiliser les services de données NetApp pour la sauvegarde, la hiérarchisation, la classification et la synchronisation des données. 
 ---
 = Utiliser les services de données NetApp avec les buckets S3
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Une fois que vous avez découvert les compartiments S3 dans la console 
 
 
 [role="lead"]
-Une fois que vous avez découvert les compartiments S3 dans la console NetApp , vous pouvez utiliser les services de données NetApp pour la sauvegarde, la hiérarchisation, la classification et la synchronisation des données.
+Après avoir découvert les compartiments S3 dans la NetApp Console, vous pouvez utiliser les services de données NetApp pour la sauvegarde, la hiérarchisation, la classification et la synchronisation des données.
 
 * Utilisez * NetApp Backup and Recovery* pour sauvegarder les données de vos systèmes ONTAP et Cloud Volumes ONTAP sur site vers le stockage d'objets S3.
 +
@@ -46,6 +46,6 @@ https://docs.netapp.com/us-en/data-services-copy-sync/concept-cloud-sync.html["E
 Pour commencer, sélectionnez votre système Amazon S3 et sélectionnez l'option appropriée dans la section *Classification* du panneau Services pour lancer l'analyse de vos compartiments S3.
 
 +
-https://docs.netapp.com/us-en/data-services-classification/task-scanning-s3.html["En savoir plus sur le service de classification des données NetApp"^] .
+https://docs.netapp.com/us-en/data-services-classification/task-scanning-s3.html["En savoir plus sur le service de NetApp Data Classification"^] .
 
 

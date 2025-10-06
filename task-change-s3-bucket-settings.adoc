@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-change-s3-bucket-settings.html 
 keywords: s3 buckets, s3 storage, s3 working environment, amazon s3 buckets, amazon s3 working environment 
-summary: Lorsque votre système Amazon S3 est disponible sur la page Systèmes, vous pouvez modifier certaines propriétés du compartiment directement depuis la console NetApp . 
+summary: Lorsque votre système Amazon S3 est disponible sur la page Systèmes, vous pouvez modifier certaines propriétés du compartiment directement depuis la NetApp Console. 
 ---
 = Modifier les paramètres du compartiment S3
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Lorsque votre système Amazon S3 est disponible sur la page Systèmes, 
 
 
 [role="lead"]
-Lorsque votre système Amazon S3 est disponible sur la page Systèmes, vous pouvez modifier certaines propriétés du compartiment directement depuis la console NetApp .
+Lorsque votre système Amazon S3 est disponible sur la page Systèmes, vous pouvez modifier certaines propriétés du compartiment directement depuis la NetApp Console.
 
 Notez que vous ne pouvez pas modifier le nom du bucket, le compte AWS, la région ou le paramètre de verrouillage d'objet.
 
@@ -47,7 +47,7 @@ image:screenshot-amazon-s3-versioning.png["Une capture d’écran montrant comme
 
 Les balises sont des métadonnées que vous pouvez utiliser pour regrouper des ressources afin d'identifier des applications, des environnements, des régions, des fournisseurs de cloud, etc.  Les balises se composent d'une clé de balise et d'une valeur de balise.  Vous pouvez ajouter des balises à un bucket afin que les balises soient appliquées aux objets lorsqu'ils sont ajoutés au bucket.  Vous pouvez également modifier et supprimer des balises et des valeurs de balises.
 
-Les balises sont désactivées par défaut dans les nouveaux compartiments créés par la console NetApp . https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html["En savoir plus sur le balisage dans la documentation Amazon S3"^] .
+Les balises sont désactivées par défaut dans les nouveaux compartiments créés par la NetApp Console. https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html["En savoir plus sur le balisage dans la documentation Amazon S3"^] .
 
 image:screenshot-amazon-s3-tags.png["Une capture d'écran montrant comment ajouter une nouvelle paire clé/valeur de balise pour un bucket."]
 
@@ -59,7 +59,7 @@ Après avoir ajouté une balise, cliquez sur *Appliquer* pour enregistrer vos mo
 
 Le chiffrement côté serveur vous permet de chiffrer les données à la destination Amazon S3.  Amazon S3 crypte vos données au niveau de l'objet lorsqu'il les écrit sur le disque et les décrypte pour vous lorsque vous y accédez.  Vous pouvez modifier le paramètre de cryptage utilisé pour les futurs objets lorsqu'ils sont ajoutés au bucket.
 
-Le chiffrement est activé par défaut à l'aide de « clés gérées par Amazon S3 (SSE-S3) » dans de nouveaux compartiments créés par la console NetApp . https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html["En savoir plus sur le chiffrement côté serveur dans la documentation Amazon S3"^] .
+Le chiffrement est activé par défaut à l'aide de « clés gérées par Amazon S3 (SSE-S3) » dans de nouveaux compartiments créés par la NetApp Console. https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html["En savoir plus sur le chiffrement côté serveur dans la documentation Amazon S3"^] .
 
 Vous pouvez également choisir d'activer le chiffrement à l'aide de la « clé AWS Key Management Service (SSE-KMS) ».  Le chiffrement est également possible à l'aide de vos propres clés fournies par le client (SSE-C), mais cette fonctionnalité n'est pas disponible via l'interface utilisateur de la console - vous devez utiliser l'interface Amazon.
 
