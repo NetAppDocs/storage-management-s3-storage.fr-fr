@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: task-add-s3-bucket.html 
+keywords: s3 buckets, s3 storage, s3 working environment, s3 system, amazon s3 buckets, amazon s3 working environment, amazon s3 system, netapp console 
+summary: Lorsque votre système Amazon S3 est disponible sur la page Systèmes, vous pouvez ajouter des buckets supplémentaires directement depuis la console NetApp . 
+---
+= Ajouter des buckets S3
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Lorsque votre système Amazon S3 est disponible sur la page _Systèmes_, vous pouvez ajouter des buckets supplémentaires directement depuis la console NetApp .
+
+.Étapes
+. Depuis la page _Systèmes_, double-cliquez sur le système Amazon S3 pour afficher la page _Présentation des compartiments Amazon S3_, puis cliquez sur *Ajouter un compartiment*.
++
+La page _Ajouter un bucket_ s'affiche.
+
+. Dans la page _Ajouter un bucket_, saisissez les informations requises pour créer le bucket et cliquez sur *Appliquer*.
++
+.. Entrez le nom que vous souhaitez utiliser pour le bucket.
+.. Sélectionnez le compte AWS qui sera le propriétaire du bucket.  Il peut s'agir du compte principal sur lequel l'agent de console a été déployé, ou il peut s'agir d'un https://docs.netapp.com/us-en/console-setup-admin/task-adding-aws-accounts.html#add-credentials-to-a-connector["compte différent que vous avez ajouté à la console NetApp"^] .
+.. Sélectionnez la région AWS dans laquelle le bucket sera créé.
+.. En option, vous pouvez activer le verrouillage d'objet S3 sur le bucket pour stocker des objets à l'aide d'un modèle WORM (écriture unique, lecture multiple).  Si vous prévoyez d'utiliser le verrouillage d'objet, vous devez l'activer lors de la création du bucket.  L'activation du verrouillage d'objet active également le contrôle de version. https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html["En savoir plus sur le verrouillage des objets dans la documentation Amazon S3"^] .
++
+Le bucket est créé.
+
+
+
+
+
+.Quelle est la prochaine étape
+Vous ne pouvez pas configurer manuellement le contrôle de version, les balises ou le chiffrement lors de l'ajout initial d'un bucket.  Une fois le bucket créé, vous pouvez configurer ces autres propriétés du bucket. link:task-change-s3-bucket-settings.html["En savoir plus sur la modification des paramètres du bucket"] .

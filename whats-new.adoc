@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes' 
+summary: Découvrez les nouveautés du stockage Amazon S3 dans la console NetApp . 
+---
+= Nouveautés du stockage Amazon S3 dans la console NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Découvrez les nouveautés du stockage Amazon S3 dans la console NetApp .
+
+
+
+== 06 octobre 2025
+
+
+
+=== BlueXP est désormais NetApp Console
+
+La console NetApp , construite sur la base BlueXP améliorée et restructurée, fournit une gestion centralisée du stockage NetApp et des services de données NetApp dans les environnements sur site et cloud à l'échelle de l'entreprise, offrant des informations en temps réel, des flux de travail plus rapides et une administration simplifiée, hautement sécurisée et conforme.
+
+Pour plus de détails sur ce qui a changé, consultez lelink:https://docs.netapp.com/us-en/bluexp-relnotes/index.html["Notes de version de la console NetApp"] .
+
+
+
+== 05 mars 2023
+
+
+
+=== Possibilité d'ajouter de nouveaux buckets à partir de BlueXP
+
+Vous avez la possibilité d’afficher les buckets Amazon S3 sur BlueXP Canvas depuis un certain temps.  Vous pouvez désormais ajouter de nouveaux buckets et modifier les propriétés des buckets existants directement depuis BlueXP. https://docs.netapp.com/us-en/storage-management-s3-storage/task-add-s3-bucket.html["Découvrez comment ajouter de nouveaux buckets Amazon S3"] .

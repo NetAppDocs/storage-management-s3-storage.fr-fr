@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: task-change-s3-bucket-settings.html 
+keywords: s3 buckets, s3 storage, s3 working environment, amazon s3 buckets, amazon s3 working environment 
+summary: Lorsque votre système Amazon S3 est disponible sur la page Systèmes, vous pouvez modifier certaines propriétés du compartiment directement depuis la console NetApp . 
+---
+= Modifier les paramètres du compartiment S3
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Lorsque votre système Amazon S3 est disponible sur la page Systèmes, vous pouvez modifier certaines propriétés du compartiment directement depuis la console NetApp .
+
+Notez que vous ne pouvez pas modifier le nom du bucket, le compte AWS, la région ou le paramètre de verrouillage d'objet.
+
+Les propriétés du bucket que vous pouvez modifier incluent :
+
+* Si le contrôle de version est activé ou désactivé pour tous les objets du bucket.
+* Vous pouvez choisir d’appliquer des balises aux objets ajoutés au bucket.
+* Si les nouveaux objets ajoutés au bucket sont chiffrés ou non, et l'option utilisée pour le chiffrement.
+
+
+Vous pouvez modifier ces paramètres de bucket directement en cliquantimage:button-horizontal-more.gif["le bouton trois points supplémentaires"] pour un seau.
+
+image:screenshot-edit-amazon-s3-bucket.png["Une capture d’écran montrant comment sélectionner le bouton Détails du gestionnaire pour modifier les propriétés du bucket."]
+
+
+
+== Modifier le paramètre de version
+
+Le contrôle de version vous permet de conserver plusieurs versions d'un objet dans un compartiment afin de pouvoir restaurer les objets supprimés ou écrasés accidentellement.  Vous pouvez modifier le paramètre de contrôle de version des objets futurs lorsqu'ils sont ajoutés au bucket.  La modification du paramètre de contrôle de version ne modifie pas la valeur des objets existants.
+
+Le contrôle de version est désactivé par défaut dans les nouveaux buckets, sauf si vous avez activé le verrouillage d'objet lors de la création du bucket. https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html["En savoir plus sur le contrôle de version dans la documentation Amazon S3"^] .
+
+Lorsque cette option est activée, si vous souhaitez arrêter le contrôle de version temporairement ou définitivement, vous pouvez choisir l'état « Suspendu ».  Vous ne pouvez pas désactiver le contrôle de version une fois qu'il a été activé.
+
+image:screenshot-amazon-s3-versioning.png["Une capture d’écran montrant comment modifier le paramètre de contrôle de version d’un bucket."]
+
+
+
+== Ajouter ou modifier les balises des objets dans le bucket
+
+Les balises sont des métadonnées que vous pouvez utiliser pour regrouper des ressources afin d'identifier des applications, des environnements, des régions, des fournisseurs de cloud, etc.  Les balises se composent d'une clé de balise et d'une valeur de balise.  Vous pouvez ajouter des balises à un bucket afin que les balises soient appliquées aux objets lorsqu'ils sont ajoutés au bucket.  Vous pouvez également modifier et supprimer des balises et des valeurs de balises.
+
+Les balises sont désactivées par défaut dans les nouveaux compartiments créés par la console NetApp . https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html["En savoir plus sur le balisage dans la documentation Amazon S3"^] .
+
+image:screenshot-amazon-s3-tags.png["Une capture d'écran montrant comment ajouter une nouvelle paire clé/valeur de balise pour un bucket."]
+
+Après avoir ajouté une balise, cliquez sur *Appliquer* pour enregistrer vos modifications.  Si vous souhaitez ajouter d'autres balises, cliquez sur *Ajouter une nouvelle balise*.  Vous pouvez ajouter jusqu'à 10 balises par bucket.
+
+
+
+== Modifier le paramètre de cryptage
+
+Le chiffrement côté serveur vous permet de chiffrer les données à la destination Amazon S3.  Amazon S3 crypte vos données au niveau de l'objet lorsqu'il les écrit sur le disque et les décrypte pour vous lorsque vous y accédez.  Vous pouvez modifier le paramètre de cryptage utilisé pour les futurs objets lorsqu'ils sont ajoutés au bucket.
+
+Le chiffrement est activé par défaut à l'aide de « clés gérées par Amazon S3 (SSE-S3) » dans de nouveaux compartiments créés par la console NetApp . https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html["En savoir plus sur le chiffrement côté serveur dans la documentation Amazon S3"^] .
+
+Vous pouvez également choisir d'activer le chiffrement à l'aide de la « clé AWS Key Management Service (SSE-KMS) ».  Le chiffrement est également possible à l'aide de vos propres clés fournies par le client (SSE-C), mais cette fonctionnalité n'est pas disponible via l'interface utilisateur de la console - vous devez utiliser l'interface Amazon.
+
+image:screenshot-amazon-s3-encryption1.png["Une capture d’écran montrant comment modifier le type de clé de chiffrement utilisé pour un bucket."]
+
+Si vous choisissez « Clé AWS Key Management Service (SSE-KMS) », vous pouvez choisir une clé AWS KMS que vous avez déjà créée ou utiliser un ARN de clé AWS KMS (Amazon Resource Name).
+
+image:screenshot-amazon-s3-encryption2.png["Une capture d’écran montrant comment sélectionner des paramètres de chiffrement alternatifs pour un bucket."]
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html["En savoir plus sur AWS Key Management Service dans la documentation Amazon S3"^]et à propos https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-mgmt["utiliser des clés client par rapport aux clés AWS"^] .
